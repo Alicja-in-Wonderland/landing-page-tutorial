@@ -277,10 +277,6 @@ p[data-width="wide"] {
   margin-inline: auto;
 }
 
-:where(.flow :not(:first-child)) {
-  margin-top: var(--flow-spacer, 3em);
-}
-
 .even-columns {
   display: grid;
   gap: 1rem;
@@ -291,6 +287,18 @@ p[data-width="wide"] {
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
   }
+}
+
+.vertical-align-centre {
+  align-items: center;
+}
+
+.justify-self-end {
+  justify-self: end;
+}
+
+:where(.flow :not(:first-child)) {
+  margin-top: var(--flow-spacer, 3em);
 }
 
 .text-primary-400 {
