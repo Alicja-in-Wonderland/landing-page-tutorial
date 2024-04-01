@@ -458,6 +458,17 @@ input:where([type="text"], [type="email"]) {
   }
 }
 
+/* Slider */
+
+.slider {
+  display: flex;
+}
+
+.slider > * {
+  width: 100%;
+  flex: 0 0 auto;
+}
+
 /* Utility classes */
 
 /* Hides the 'Menu' element on the screen, but makes it accessible to screen readers */
