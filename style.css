@@ -469,6 +469,7 @@ input:where([type="text"], [type="email"]) {
 
 .a11y-slider-container {
   margin-block: var(--size-700);
+  margin-inline: var(--size-400);
 }
 
 .slider > * {
@@ -479,6 +480,14 @@ input:where([type="text"], [type="email"]) {
 }
 
 @media (min-width: 30em) {
+  .slider {
+    scroll-padding-inline: 25px;
+  }
+
+  .a11y-slider-container {
+    margin-inline: 0;
+  }
+
   .slider > * {
     width: 50%;
   }
